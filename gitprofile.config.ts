@@ -20,39 +20,79 @@ const CONFIG = {
         limit: 8, // How many projects to display.
         exclude: {
           forks: false, // Forked projects will not be displayed if set to true.
-          projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
+          projects: ['UltraBooDev/UltraBooDev.github.io'], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
         },
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: [], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
-      header: 'My Projects',
+      header: 'Projects',
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Project Name',
+          title: 'Pride Run (Arcade Game)',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'A simple multiplayer arcade game, themed around the Toronton 2024 Pride Parade. This was my final project at Adsologist.',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'https://media.licdn.com/dms/image/sync/v2/D4E27AQHX0Bv3UFIEfA/articleshare-shrink_800/articleshare-shrink_800/0/1726071411646?e=1729544400&v=beta&t=_kgKWk7AfnRwIfOKlEFjsZ-FTVhF5BrxKqKtn46yNFY',
+          link: 'https://www.linkedin.com/posts/ultraboo_im-happy-to-share-my-work-on-pride-run-activity-7239672159588024320-hIQg',
         },
         {
-          title: 'Project Name',
+          title: 'Teddy Beer (Arcade Game)',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            '1 on 1 arcade game, themed around the bar "Teddy Beer". Using motion controls, whoever drank the most amount of beer would win the game.',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'https://media.licdn.com/dms/image/sync/v2/D4E27AQGkWNnfCI7vZw/articleshare-shrink_1280_800/articleshare-shrink_1280_800/0/1725824177296?e=1729544400&v=beta&t=duM9UpbfbsFu8RVGk3wkd1Dyx4msRHykoXvJPoIGLwg',
+          link: 'https://www.linkedin.com/posts/ultraboo_im-happy-to-share-my-work-on-teddy-beer-ugcPost-7239156125223333890-zHlY?utm_source=share&utm_medium=member_desktop',
         },
+        {
+          title: 'Decoration Dash (Custom level for A Hat in Time)',
+          description:
+            'A custom level for the game "A Hat in Time", based around getting the first place in a garden competition. I was responsible for some minor shader work and playtesting it. The mod would later be featured by the original games developers in the Summer Event',
+          imageUrl:
+            'https://media.licdn.com/dms/image/v2/D4E2DAQHrCj6Dc8N6pQ/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1725948857514?e=1729544400&v=beta&t=1kzldb2Mfk5LNynr2yqqIIs9_ycQAUG29S58K1X8aMA',
+          link: 'https://steamcommunity.com/sharedfiles/filedetails/?id=3154979886',
+        },
+        {
+          title: 'Farewell Avalon (Game)',
+          description:
+            'Top down combat/puzzle game that features two protagonists who need to work together in order to find the truth. I was responsible for most of the initial programming, and later on, enemy combat AI. This game has been featured at the Level UP expo, and the CNE convention.',
+          imageUrl:
+            'https://img.itch.zone/aW1nLzExOTY0NDE2LnBuZw==/original/x0dPAi.png',
+          link: 'https://centennial-game-dev.itch.io/farewell-avalon',
+        },
+        {
+          title: 'Spooky Spaceship (A Hat in Time Addon)',
+          description:
+            'Made for the 2020 Halloween Mod Jam, this project replaces the games usual hub with a spooky, halloween themed one. I was responsible for some 3D art and programming.',
+          imageUrl:
+            'https://media.licdn.com/dms/image/sync/v2/D5627AQEIaAOWc1FhVA/articleshare-shrink_1280_800/articleshare-shrink_1280_800/0/1714866544802?e=1729544400&v=beta&t=U2rhVN0rW4UrIfZxiQCJrD0tqzjZ6EOXmAAoVzSI7YY',
+          link: 'https://steamcommunity.com/sharedfiles/filedetails/?id=2273065025',
+        },
+        {
+          title: 'Christmas Cruiser: Holiday Hub (A Hat in Time Addon)',
+          description:
+            'Made for the 2020 Christmas Mod Jam, this project replaces the games usual hub with a holiday themed one. I was responsible for some 3D art and programming.',
+          imageUrl:
+            'https://media.licdn.com/dms/image/sync/v2/D5627AQH3mfnNQicXQA/articleshare-shrink_1280_800/articleshare-shrink_1280_800/0/1714866544049?e=1729544400&v=beta&t=klJHzi0ZeNcquPmUF3GP23LS0pbU0ApxH83wqhXTwAE',
+          link: 'https://steamcommunity.com/sharedfiles/filedetails/?id=2331578059',
+        },
+        {
+          title: 'Lost in Space (Game)',
+          description:
+            'Simple endless runner game, where you must avoid asteroids as a small spaceship, until a boss enemy arrives, who must be defeated to continue. This was my first Unity project, made so I could get used to the engine.',
+          imageUrl:
+            'https://media.licdn.com/dms/image/sync/v2/D5627AQHkpjtB7hiT1A/articleshare-shrink_1280_800/articleshare-shrink_1280_800/0/1711180024606?e=1729544400&v=beta&t=hgj810c01WbpAOkrXyrc8zdTlgIRb3J_nNVOYYjAUMc',
+          link: 'https://ultraboo.itch.io/lost-in-space',
+        }, 
       ],
     },
   },
   seo: {
-    title: 'Leonardo Siqueira Portfolio',
+    title: 'Portfolio of Leonardo Siqueira / Ultra Boo',
     description: '',
     imageURL: '',
   },
@@ -119,14 +159,6 @@ const CONFIG = {
       from: 'October 2023',
       to: 'April 2024',
       companyLink: 'https://www.centennialcollege.ca/',
-    },
-  ],
-  certifications: [
-    {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
     },
   ],
   educations: [
